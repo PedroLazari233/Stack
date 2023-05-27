@@ -26,8 +26,7 @@ namespace Stack
         {
             if(obj == null)
             {
-                Console.WriteLine("Error: Can't pass empty objects!");
-                return;
+                throw new InvalidOperationException("Error: Can't pass empty objects!");
             }
 
             _top++;
